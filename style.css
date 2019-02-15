@@ -24,12 +24,12 @@ header {
 nav {
     position: fixed;
     width: 100%;
-    line-height: 60px;
+    line-height: 50px;
 }
 
 nav ul {
     float: right;
-    margin: 0;
+    margin-top: 16px;
     padding-right: 42px;
 }
 
@@ -52,6 +52,24 @@ nav ul li a {
     font-size: 17px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.btn-signup {
+    background: none;
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-signup:hover {
+    background: orange;
+    border: 1px solid #fff;
+}
+
+.btn-signup:active {
+    background: rgb(216, 146, 17);
+    border: 1px solid #fff;
 }
 
 .logo-box {
@@ -95,29 +113,37 @@ nav ul li a {
     animation-timing-function: ease-out;
 }
 
-button{
-    /*border: 2px solid #f0f1f4;*/
-    background: orange;
-    display: block;
-    margin: 10px auto;
-    text-align: center;
-    padding: 15px 30px;
-    outline: none;
-    color: rgb(5, 5, 5);
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 50px;
+    display: inline-block;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 300;
-    /*transition: 250ms background ease;
-    -webkit-transition: 250ms background ease;
-    -moz-transition: 250ms background ease;
-    -o-transition: 250ms background ease;*/
-    width: 200px;
-  }
-  
-  button:hover{
-    background: rgb(204, 137, 12);
-  }
+}
+
+.btn-orange {
+    color: black;
+    background-color: orange;
+    margin-top: 12px;
+}
+
+/*.btn-orange:hover {
+    background-color: rgb(201, 132, 5);
+}*/
+
+.btn-orange:active {
+    background-color: rgb(201, 132, 5);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+}
 
 @keyframes moveInLeft {
     0% {
@@ -149,4 +175,110 @@ button{
         opacity: 1;
         transform: translateX(0px);
     }
+}
+
+/*Catering Section*/
+
+.section-catering {
+    background-color: #f7f7f7;
+    padding: 40px 100px 200px 100px; 
+}
+
+.heading-two {
+    color: rgb(41, 41, 41);
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: -0.3px;
+    line-height: 70px;
+}
+
+.two-cols {
+    overflow: hidden;
+    max-width: 1140px;
+    margin: 10px auto;
+}
+
+.two-cols .col-1 {
+    float: left;
+    width: 30vw;
+    margin-top: 100px;
+    margin-right: 20px;
+}
+
+.two-cols .col-2 {
+    float: right;
+    width: 50vw;
+    height: 70vh;
+}
+
+.description {
+    color: rgb(44, 44, 44);
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.composition {
+    position: relative;
+}
+
+.composition-photo {
+    width: 42%;
+    border-radius: 50%;
+    box-shadow: 0 15px 20px rgba(0,0,0,.3);
+    margin: 22px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 5px;
+}
+
+.section-photo-1 {
+    left: 5%;
+    top: 10px;
+}
+
+.section-photo-1:hover {
+    transform: scale(1.07) translateY(5px);
+    box-shadow: 0 20px 20px rgba(0,0,0,.4);
+    z-index: 20;
+    /*outline: 5px solid orange;*/
+    -moz-outline-radius-bottomleft: 50%;
+    -moz-outline-radius-bottomright: 50%;
+    -moz-outline-radius-topleft: 50%;
+    -moz-outline-radius-topright: 50%;
+}
+
+.section-photo-3 {
+    right: 5%;
+    top: 45px;
+}
+
+.section-photo-3:hover {
+    transform: scale(1.07) translateY(5px);
+    box-shadow: 0 20px 20px rgba(0,0,0,.4);
+    z-index: 20;
+    /*outline: 5px solid orange;*/
+    -moz-outline-radius-bottomleft: 50%;
+    -moz-outline-radius-bottomright: 50%;
+    -moz-outline-radius-topleft: 50%;
+    -moz-outline-radius-topright: 50%;
+}
+
+.section-photo-2 {
+    right: 25%;
+    top: 100px;
+}
+
+.section-photo-2:hover {
+    transform: scale(1.07) translateY(5px);
+    box-shadow: 0 20px 20px rgba(0,0,0,.4);
+    z-index: 20;
+    top: 95px;
+    /*outline: 5px solid orange;*/
+    -moz-outline-radius-bottomleft: 50%;
+    -moz-outline-radius-bottomright: 50%;
+    -moz-outline-radius-topleft: 50%;
+    -moz-outline-radius-topright: 50%;
 }
