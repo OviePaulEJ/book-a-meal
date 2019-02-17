@@ -25,6 +25,7 @@ nav {
     position: fixed;
     width: 100%;
     line-height: 50px;
+    background-color: black;
 }
 
 nav ul {
@@ -181,7 +182,7 @@ nav ul li a {
 
 .section-catering {
     background-color: #f7f7f7;
-    padding: 40px 100px 200px 100px; 
+    padding: 40px 100px 20px 100px; 
 }
 
 .heading-two {
@@ -244,10 +245,6 @@ nav ul li a {
     box-shadow: 0 20px 20px rgba(0,0,0,.4);
     z-index: 20;
     /*outline: 5px solid orange;*/
-    -moz-outline-radius-bottomleft: 50%;
-    -moz-outline-radius-bottomright: 50%;
-    -moz-outline-radius-topleft: 50%;
-    -moz-outline-radius-topright: 50%;
 }
 
 .section-photo-3 {
@@ -281,4 +278,125 @@ nav ul li a {
     -moz-outline-radius-bottomright: 50%;
     -moz-outline-radius-topleft: 50%;
     -moz-outline-radius-topright: 50%;
+}
+
+/* Today's Menu Section*/
+
+.section-menu {
+    background-image: url(img/Chalkboard.jpg);
+    padding: 20px 100px 20px 100px;
+    height: 85vh;
+}
+
+.heading-menu {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: -0.3px;
+    line-height: 80px;
+    padding-top: 10px;
+}
+
+.heading-menu-sub {
+    color: rgb(233, 232, 232);
+    font-size: 20px;
+    text-align: center;
+}
+
+.three-cols {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1140px;
+    margin: 10px auto;
+}
+
+.three-cols .col {
+    
+    width: 300px;
+    height: 270px;
+    margin: 20px 0px;
+    
+}
+
+.card {
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 15px 20px rgba(0,0,0,.3);
+    transition: all .2s;
+    outline-offset: 5px;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.07) translateY(5px);
+    box-shadow: 0 20px 20px rgba(0,0,0,.4);
+    z-index: 20;
+    outline: 5px solid orange;
+}
+
+.card-pic img {
+    width: 100%;
+} 
+
+.card-heading h4 {
+    font-size: 20px;
+    font-weight: 400;
+    width: 150px;
+    background-color: rgb(224, 43, 43);
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 75px;
+    bottom: 60px;
+}
+
+.card-description p {
+    font-style: italic;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background-color: white;
+    padding: 5px 10px;
+}
+
+.three-cols .col-2 {
+    float: left;
+    width: 30vw;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.three-cols .col-3 {
+    float: left;
+    width: 30vw;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+    
+.btn-view-menu {
+    padding: 10px 50px;
+    color: black;
+    background-color: orange;
+    margin-top: 12px;
+}
+
+.btn-view-menus:active {
+    background-color: rgb(201, 132, 5);
+    padding: 10px 50px;
+}
+
+.menu-btn {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
 }
