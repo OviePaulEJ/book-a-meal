@@ -7,7 +7,7 @@ import mealRoutes from './routes/meal.route';
 const app = express();
 const PORT = 9001;
 
-app.unsubscribe(bodyParser.json());
+app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
     return res.send('The API is working');

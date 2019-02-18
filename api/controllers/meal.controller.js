@@ -10,7 +10,7 @@ const MealController = {
     },
     addAMeal(req, res) {
         const newMeal = req.body;
-        console.log(req);
+        console.log(newMeal);
         const createdMeal = MealService.addMeal(newMeal);
         return res.json({
             status: 'success',
