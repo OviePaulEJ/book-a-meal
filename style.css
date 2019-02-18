@@ -17,15 +17,15 @@ header {
     background-image: url(img/background.jpg);
     background-size: cover;
     background-position: bottom;
-    position: relative;
-    
+    position: relative;   
 }
 
 nav {
     position: fixed;
     width: 100%;
     line-height: 50px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+    z-index: 30;
 }
 
 nav ul {
@@ -382,7 +382,7 @@ nav ul li a {
     padding: 10px 50px;
     color: black;
     background-color: orange;
-    margin-top: 12px;
+ 
 }
 
 .btn-view-menus:active {
@@ -400,3 +400,78 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+/*SignUp Page*/
+
+.header-signup {
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba(95, 77, 68, 0.8),
+        rgba(56, 37, 2, 0.8)),
+        url(img/background2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.logo-signup {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-signup img {
+    margin-top: 50px;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    margin:20px auto;
+}
+
+.signup-form {
+    width: 420px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.93);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px #313131
+}
+
+.heading-sign {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.radio {
+    
+}
+
+#username, #pass, #email{
+    border: 2px solid #d0d0d2;
+    background: none;
+    display: block;
+    margin: 30px auto;
+    padding: 15px 48px;
+    width: 200px;
+    border-bottom: 2px solid orange;
+          border-radius: 10px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    
+    transition: 250ms width ease, 250ms border-color ease;
+    -webkit-transition: 250ms width ease, 250ms border-color ease;
+    -moz-transition: 250ms width ease, 250ms border-color ease;
+    -o-transition: 250ms width ease, 250ms border-color ease;
+  }
+
+.redirect {
+    display: flex;
+    justify-content: center;
+}
+
