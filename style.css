@@ -573,3 +573,24 @@ footer {
   .forgot:hover {
       color: rgb(165, 111, 10);
   }
+
+  /*Menu Page*/
+
+  .todays-menu {
+    background-image: url(img/Chalkboard.jpg);
+    padding: 80px 100px 20px 100px;
+    height: 190vh;
+  }
+
+  .three-cols-2 {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1140px;
+    margin: 10px auto;
+}
+
+.three-cols-3 {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1140px;
+    margin: 50px auto;
