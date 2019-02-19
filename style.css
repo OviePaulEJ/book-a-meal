@@ -421,24 +421,24 @@ footer {
 }
 
 .logo-signup img {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .form {
     display: flex;
     justify-content: center;
     width: 500px;
     margin:20px auto;
+    margin-bottom: 10px;
 }
 
 .signup-form {
-    width: 420px;
+    width: 380px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.93);
     border: none;
     border-radius: 10px;
     text-align: center;
     margin-bottom: 20px;
-    box-shadow: 5px 5px 5px #313131
 }
 
 .heading-sign {
@@ -448,21 +448,25 @@ footer {
 }
 
 .radio {
-    
+    font-size: 18px;
 }
 
-#username, #pass, #email{
+#customer-signup:hover, #caterer-signup:hover {
+
+}
+
+#username-signup, #pass-signup, #email-signup {
     border: 2px solid #d0d0d2;
     background: none;
     display: block;
-    margin: 30px auto;
+    margin: 20px auto;
     padding: 15px 48px;
     width: 200px;
     border-bottom: 2px solid orange;
-          border-radius: 10px;
+          border-radius: 5px;
     outline: none;
     color: white;
-    border-radius: 25px;
+    border-radius: 5px;
     
     transition: 250ms width ease, 250ms border-color ease;
     -webkit-transition: 250ms width ease, 250ms border-color ease;
@@ -470,8 +474,102 @@ footer {
     -o-transition: 250ms width ease, 250ms border-color ease;
   }
 
+#username-signup:focus , #pass-signup:focus, #email-signup:focus {
+    width: 250px;
+    border-color: orange;
+}
+
+#signup-btn{
+    border: 2px solid #f0f1f4;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px 20px;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 200;
+    transition: 250ms background ease;
+    -webkit-transition: 250ms background ease;
+    -moz-transition: 250ms background ease;
+    -o-transition: 250ms background ease;
+    width: 150px;
+  }
+  
+  #signup-btn:hover{
+    background: orange;
+  }
+
+
 .redirect {
     display: flex;
     justify-content: center;
+    text-decoration: none;
+    color: white;
 }
 
+.redirect:hover {
+    color: black;
+}
+
+/*Login Page*/
+
+#username-email-signin, #pass-signin {
+    border: 2px solid #d0d0d2;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    padding: 15px 48px;
+    width: 220px;
+    border-bottom: 2px solid orange;
+          border-radius: 5px;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    
+    transition: 250ms width ease, 250ms border-color ease;
+    -webkit-transition: 250ms width ease, 250ms border-color ease;
+    -moz-transition: 250ms width ease, 250ms border-color ease;
+    -o-transition: 250ms width ease, 250ms border-color ease;
+}
+
+#username-email-signin:focus , #pass-signin:focus {
+    width: 260px;
+    border-color: orange;
+}
+
+#signin-btn{
+    border: 2px solid #f0f1f4;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px 20px;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 200;
+    transition: 250ms background ease;
+    -webkit-transition: 250ms background ease;
+    -moz-transition: 250ms background ease;
+    -o-transition: 250ms background ease;
+    width: 150px;
+  }
+  
+  #signin-btn:hover{
+    background: orange;
+  }
+
+  .forgot {
+      color: grey;
+      text-decoration: none;
+  }
+
+  .forgot:hover {
+      color: rgb(165, 111, 10);
+  }

@@ -19,21 +19,22 @@
 
         <div class="form">
             <form class="signup-form">
-                <h1 class= "heading-sign">Sign Up as...</h1>
-                <div class="radio">
-                    <input type="radio" name="user-type" value="Customer" id="customer-signup"> Customer
-                    <input type="radio" name="user-type" value="Caterer" id="caterer-signup"> Caterer
+               
+                <input type="text" name="Username" placeholder="Username or email" id="username-email-signin">
+                <input type="password" name="password" placeholder="Password" id="pass-signin">
+                <button type="submit" name="submit" id="signin-btn">Sign In</button>
+                
+                <div>
+                    <a href="#" class="forgot">
+                        <p>Forgot password?</p>
+                    </a>
                 </div>
-                <input type="text" name="Username" placeholder="Username" id="username-signup">
-                <input type="text" name="Email" placeholder="Email" id="email-signup">
-                <input type="password" name="password" placeholder="Password" id="pass-signup">
-                <button type="submit" name="submit" id="signup-btn">Sign Up</button>
             </form>
         </div>
 
-        <div >
-            <a href="signin.html" class="redirect">
-                <p>Already have an account?</p>
+        <div>
+            <a href="signup.html" class="redirect">
+                <p>Don't have an account?</p>
             </a>
         </div>
 
