@@ -61,6 +61,7 @@ nav ul li a {
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+    color:white;
 }
 
 .btn-signup:hover {
@@ -451,10 +452,6 @@ footer {
     font-size: 18px;
 }
 
-#customer-signup:hover, #caterer-signup:hover {
-
-}
-
 #username-signup, #pass-signup, #email-signup {
     border: 2px solid #d0d0d2;
     background: none;
@@ -600,15 +597,16 @@ footer {
 
 .meal-cols {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     max-width: 1140px;
-    margin: 50px auto;
+    
     
 }
 
 
 .meal-card {
-    width: 80%;
+    width: 30rem;
     height: 200px;
     background-color: rgba(255, 255, 255);
     border-radius: 5px;
@@ -616,6 +614,7 @@ footer {
     box-shadow: 0 15px 20px rgba(0,0,0,.3);
     transition: all .2s;
     position: relative;
+    margin: 25px 0px ;
 }
 
 .meal-pic img {
@@ -664,4 +663,99 @@ footer {
     position: absolute;
     bottom: 10px;
     right: 10px;
+}
+
+.meal-btn {
+    margin: 25px;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+}
+
+/*Checkout Page*/
+
+.order-confirm {
+    background-image: url(img/Altbackground.jpg);
+    padding: 80px 100px 20px 100px;
+    height: 150vh;
+  }
+
+.order-cols {
+    display: flex;
+    justify-content: center;
+    max-width: 1140px;
+}
+
+
+.order-card {
+    width: 50rem;
+    height: 400px;
+    background-color: rgba(255, 255, 255);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 15px 20px rgba(0,0,0,.3);
+    transition: all .2s;
+    position: relative;
+    margin: 25px 0px ;
+}
+
+.order-summary {
+    font-size: 20px;
+    font-weight: 400;
+    background-color: rgb(224, 43, 43);
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.order-meals {
+    font-style: italic;
+    position: absolute;
+    left: 10px;
+    top: 70px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.order-total {
+    font-style: italic;
+    position: absolute;
+    left: 10px;
+    bottom: 60px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.order-add-btn {
+    color:white;
+    background-color: rgb(17, 177, 43);
+    margin-top: 12px;
+    padding: 10px !important;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.order-edit-btn {
+    color:white;
+    background-color: rgb(41, 17, 177);
+    margin-top: 12px;
+    padding: 10px !important;
+    position: absolute;
+    bottom: 10px;
+    right: 80px;
+}
+
+.confirm-btn {
+    margin: 25px;
+    display: flex;
+    justify-content: space-around;
+    color: black;
 }
